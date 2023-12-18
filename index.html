@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <meta lang="es" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+        <link rel="stylesheet" href="./style.css" type="text/css"/>
+        <script src="./script.js" type="text/javascript" defer></script>
+
+        <link rel="icon" type="image/png" href="./elements/calculadora.png">
+
+        <title>Calc-gain</title>
+    </head>
+    <body>
+        <h1>Calculadora de precios</h1>
+        <div class="container-dates">
+            <div class="form-dates">
+                <span class="clarification">Poner el valor en pesos(sin el $)</span>
+                <form action="#">
+                    <div class="input bales">
+                        <label for="bales">Cantidad de fardos:</label>
+                        <input type="number" id="bales" placeholder="Escribir..."/>
+                    </div>
+                    
+                    <div class="input packs">
+                        <label for="packs">Cantidad de paquetes por fardo:</label>
+                        <input type="number" id="packs" placeholder="Escribir..."/>
+                    </div>
+
+                    <div class="input units">
+                        <label for="units">Cantidad de unidades por paquete:</label>
+                        <input type="number" id="units" placeholder="Escribir..."/>
+                    </div>
+
+                    <div class="input price">
+                        <label for="price">Precio de costo</label>
+                        <input type="number" id="price" placeholder="Escribir..."/>
+                    </div>
+
+                    <div class="input porcent">
+                        <label for="price">Porcentaje de ganancia</label>
+                        <input type="number" id="porcent" placeholder="Por defecto es 30%..."/>
+                    </div>
+
+                    <button type="submit" id="calc">Calcular</button>
+                </form>
+            </div>
+            <div class="results">
+                <div class="res">
+                    <span>Precio por unidad:</span>
+                    <span>$<span id="priceForUnit">0</span></span>
+                </div>
+                <div class="res">
+                    <span>Precio por paquete:</span>
+                    <span>$<span id="priceForPack">0</span></span>
+                </div>
+                <div class="res">
+                    <span>Precio por fardo</span>
+                    <span>$<span id="priceForBale">0</span></span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>@Todos los derechos reservado a Nahim</p>
+        </footer>
+    </body>
+</html>
