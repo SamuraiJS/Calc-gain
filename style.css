@@ -63,12 +63,19 @@ h1 {
     color: #242422;
 }
 
-.container-dates form button {
+.container-dates button {
     background-color: #242424;
     width: auto;
     border: none;
     border-radius: 20px;
     padding: 7px;
+
+    transition: all 250ms ease-in-out;
+}
+
+.container-dates button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px #fff;
 }
 
 .container-dates .results {
