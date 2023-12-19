@@ -27,20 +27,20 @@ let priceUnits = 0;
 
 //Obtener los valores de cada campo de entrada:
 bales.addEventListener('input', (e) => {
-    balesVal = Number(e.target.value);
+    balesVal = Number(e.target.value) || 1;
 })
 
 packs.addEventListener('input', (e) => {
-    packsVal = Number(e.target.value);
+    packsVal = Number(e.target.value) || 1;
 })
 units.addEventListener('input', (e) => {
-    unitsVal = Number(e.target.value);
+    unitsVal = Number(e.target.value) || 1;
 })
 price.addEventListener('input', (e) => {
-    priceVal = Number(e.target.value);
+    priceVal = Number(e.target.value) || 1;
 })
 porcent.addEventListener('input', (e) => {
-    porcentVal = Number(e.target.value);
+    porcentVal = Number(e.target.value) || 30;
 })
 
 //Calcular los valores:
